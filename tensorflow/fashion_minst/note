@@ -1,0 +1,4 @@
+hidden layer 128
+    epochs 5
+hidden layer 28 * 28
+    epochs 10 : accuracy 0.9168/ 0.8915
