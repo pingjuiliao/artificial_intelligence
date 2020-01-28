@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import tensorflow as tf
 from tensorflow import keras
 import matplotlib.pyplot as plt
@@ -29,8 +29,8 @@ display = False
 if display :
     plt.imshow(train_imgs[img_idx])
     plt.show()
-    print train_imgs[img_idx]
-    print train_labels[img_idx]
+    print( train_imgs[img_idx] )
+    print( train_labels[img_idx] )
 
 ## building model
 model = keras.Sequential([
@@ -53,5 +53,5 @@ model.evaluate(test_imgs, test_labels)
 ## predict
 classifications = model.predict(test_imgs)
 test_img_idx = 0
-print classifications[test_img_idx]
+print( classifications[test_img_idx] )
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
@@ -18,4 +18,4 @@ ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 model.fit(xs, ys, epochs=500)
 
 # model.predict
-print model.predict([10.0])
+print(model.predict([10.0]))
